@@ -32,24 +32,17 @@
 </head>
 <body class="bg-bdc-bg text-slate-100 selection:bg-bdc-primary/30 selection:text-white">
 
-  <!-- Header (exact logo bg color + logo fills bar height) -->
-  <header class="sticky top-0 z-40 bg-[#010102]">
+  <!-- Header -->
+  <header class="sticky top-0 z-40 bg-[#000000]">
     <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
       <div class="flex h-16 items-center justify-between">
         <a href="/" class="flex items-center gap-3 h-16">
-          <img
-            src="/bdc_text_only_logo.png"
-            alt="Burnette Data Consulting"
-            class="h-full w-auto select-none"
-            decoding="async"
-          />
+          <img src="/bdc_text_only_logo.png" alt="Burnette Data Consulting" class="h-full w-auto select-none" decoding="async" />
         </a>
-
         <nav class="hidden md:flex items-center gap-6 text-sm">
           <a href="#services" class="hover:text-bdc-accent">Services</a>
           <a href="#contact" class="hover:text-bdc-accent">Contact</a>
         </nav>
-
         <div class="flex items-center gap-3">
           <a href="#contact" class="inline-flex items-center justify-center rounded-xl border border-bdc-border px-4 py-2 text-sm font-medium hover:border-bdc-primary hover:text-bdc-accent transition-colors">Get in touch</a>
         </div>
@@ -73,20 +66,15 @@
             business objectives, not impede them.
           </p>
           <div class="mt-8 flex flex-wrap gap-3">
-            <a href="#services" class="rounded-xl bg-bdc-primary px-5 py-3 font-semibold text-slate-900 hover:opacity-90 transition">Explore services</a>
-            <a href="#contact" class="rounded-xl border border-bdc-border px-5 py-3 font-semibold hover:border-bdc-primary hover:text-bdc-accent transition">Start a conversation</a>
+            <a href="#services" class="rounded-xl bg-bdc-primary px-5 py-3 font-semibold text-slate-900 hover:opacity-90 transition">Discuss a project</a>
+            <a href="#about" class="rounded-xl border border-bdc-border px-5 py-3 font-semibold hover:border-bdc-primary hover:text-bdc-accent transition">Learn more</a>
           </div>
         </div>
 
-        <!-- Hero logo card (use full logo, card bg matches #010102) -->
+        <!-- Hero logo card -->
         <div class="relative">
-          <div class="flex items-center justify-center h-64 sm:h-80 lg:h-[26rem] rounded-3xl bg-[#010102] border border-bdc-border shadow-soft">
-            <img
-              src="/bdc_with_cube_logo.png"
-              alt="Burnette Data Consulting logo"
-              class="h-44 sm:h-52 lg:h-64 w-auto"
-              decoding="async"
-            />
+          <div class="flex items-center justify-center h-64 sm:h-80 lg:h-[26rem] rounded-3xl bg-[#000000] border border-bdc-border shadow-soft">
+            <img src="/bdc_with_cube_logo.png" alt="Burnette Data Consulting logo" class="h-44 sm:h-52 lg:h-64 w-auto" decoding="async" />
           </div>
         </div>
       </div>
@@ -109,9 +97,8 @@
             <img
               src="/burnette_brad_picture_for_bdc_website.png"
               alt="Brad Burnette"
-              class="h-40 w-40 object-cover rounded-xl border border-bdc-border shadow-soft"
-              loading="lazy"
-              decoding="async"
+              class="h-28 w-28 md:h-32 md:w-32 lg:h-36 lg:w-36 object-cover rounded-xl border border-bdc-border shadow-soft lg:self-start"
+              loading="lazy" decoding="async"
             />
           </a>
         </div>
@@ -159,9 +146,9 @@
         </div>
       </div>
 
-      <div class="mt-10 flex flex-wrap gap-3 items-center">
+      <div class="mt-10 flex flex-wrap gap-3">
         <a href="#contact" class="rounded-xl bg-bdc-primary px-5 py-3 font-semibold text-slate-900 hover:opacity-90 transition">Discuss a project</a>
-        <!-- removed the extra small logo per request -->
+        <a href="#about" class="rounded-xl border border-bdc-border px-5 py-3 font-semibold hover:border-bdc-primary hover:text-bdc-accent transition">Learn more</a>
       </div>
     </div>
   </section>
@@ -185,7 +172,7 @@
   <section id="contact" class="py-16 lg:py-24">
     <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
 
-      <!-- Success banner (shown after redirect) -->
+      <!-- Success banner -->
       <div id="sentBanner" class="hidden mb-6 rounded-xl border border-emerald-500/30 bg-emerald-500/10 px-4 py-3 text-sm text-emerald-300">
         Thanks—your message has been sent.
       </div>
@@ -198,22 +185,15 @@
           <!-- Compact links panel -->
           <div class="mt-8 inline-block w-fit rounded-2xl border border-bdc-border bg-bdc-card p-4 shadow-soft">
             <ul class="space-y-2 text-sm">
-              <li>
-                <a class="text-bdc-accent hover:underline" href="https://www.linkedin.com/in/bradley-l-burnette/" target="_blank" rel="noopener">LinkedIn</a>
-              </li>
-              <li>
-                <a class="text-bdc-accent hover:underline" href="mailto:brad@burnette-data-consulting.com">Email Brad</a>
-              </li>
+              <li><a class="text-bdc-accent hover:underline" href="https://www.linkedin.com/in/bradley-l-burnette/" target="_blank" rel="noopener">LinkedIn</a></li>
+              <li><a class="text-bdc-accent hover:underline" href="mailto:brad@burnette-data-consulting.com">Email Brad</a></li>
             </ul>
           </div>
         </div>
 
         <!-- Email form (FormSubmit) -->
-        <form
-          class="rounded-2xl bg-bdc-card border border-bdc-border p-6 shadow-soft"
-          action="https://formsubmit.co/brad@burnette-data-consulting.com"
-          method="POST"
-        >
+        <form class="rounded-2xl bg-bdc-card border border-bdc-border p-6 shadow-soft"
+              action="https://formsubmit.co/brad@burnette-data-consulting.com" method="POST">
           <input type="hidden" name="_subject" value="BDC Website Contact" />
           <input type="hidden" name="_template" value="table" />
           <input type="hidden" name="_captcha" value="false" />
