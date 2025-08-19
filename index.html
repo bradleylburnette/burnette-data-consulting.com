@@ -32,11 +32,10 @@
 </head>
 <body class="bg-bdc-bg text-slate-100 selection:bg-bdc-primary/30 selection:text-white">
 
-  <!-- Header -->
+  <!-- Header (exact logo bg color + logo fills bar height) -->
   <header class="sticky top-0 z-40 bg-[#010102]">
     <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
       <div class="flex h-16 items-center justify-between">
-        <!-- Text-only logo fills the bar height -->
         <a href="/" class="flex items-center gap-3 h-16">
           <img
             src="/bdc_text_only_logo.png"
@@ -79,13 +78,13 @@
           </div>
         </div>
 
-        <!-- Hero logo card (full logo) -->
+        <!-- Hero logo card (use full logo, card bg matches #010102) -->
         <div class="relative">
           <div class="flex items-center justify-center h-64 sm:h-80 lg:h-[26rem] rounded-3xl bg-[#010102] border border-bdc-border shadow-soft">
             <img
               src="/bdc_with_cube_logo.png"
               alt="Burnette Data Consulting logo"
-              class="h-40 sm:h-48 lg:h-56 w-auto"
+              class="h-44 sm:h-52 lg:h-64 w-auto"
               decoding="async"
             />
           </div>
@@ -162,8 +161,7 @@
 
       <div class="mt-10 flex flex-wrap gap-3 items-center">
         <a href="#contact" class="rounded-xl bg-bdc-primary px-5 py-3 font-semibold text-slate-900 hover:opacity-90 transition">Discuss a project</a>
-        <!-- Subtle small logo placement -->
-        <img src="/bdc_with_cube_logo.png" alt="BDC logo" class="h-6 w-auto opacity-70" loading="lazy" decoding="async" />
+        <!-- removed the extra small logo per request -->
       </div>
     </div>
   </section>
@@ -197,7 +195,7 @@
           <h2 class="text-2xl font-bold tracking-tight">Contact</h2>
           <p class="mt-4 text-slate-300">Let’s talk about your goals and how Snowflake can help you reach them.</p>
 
-          <!-- Compact links panel moved here -->
+          <!-- Compact links panel -->
           <div class="mt-8 inline-block w-fit rounded-2xl border border-bdc-border bg-bdc-card p-4 shadow-soft">
             <ul class="space-y-2 text-sm">
               <li>
